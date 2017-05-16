@@ -28,7 +28,7 @@ public class SeleniumTest {
 	  //WebDriver driver = new FirefoxDriver();
 	  System.setProperty("webdriver.chrome.driver", "C:/Program Files/ChromeDriver//chromedriver.exe");
 	  //System.setProperty("webdriver.chrome.driver","C:/Program Files/Selenium/chromedriver.exe");
-	  WebDriver driver = new ChromeDriver();
+	  driver = new ChromeDriver();
       //InternetExplorerDriver driver = new InternetExplorerDriver();
 	  baseUrl = "http://www.wp.pl/";
       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -40,9 +40,9 @@ public class SeleniumTest {
     driver.get(baseUrl + "/");
     driver.findElement(By.linkText("Poczta")).click();
     driver.findElement(By.id("login")).clear();
-    driver.findElement(By.id("login")).sendKeys("dwittchen");
+    driver.findElement(By.id("login")).sendKeys("dwittchn");
     driver.findElement(By.id("password")).clear();
-    driver.findElement(By.id("password")).sendKeys("enigma123");
+    driver.findElement(By.id("password")).sendKeys("Samo");
     driver.findElement(By.id("btnSubmit")).click();
   }
 
